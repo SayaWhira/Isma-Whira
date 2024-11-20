@@ -1621,6 +1621,7 @@ body.landscape #main-content {
 
   .home .couple img {
     position: relative;
+    width: 80%;
     top: 2rem;
   }
 
