@@ -63,8 +63,11 @@ const urlParams = new URLSearchParams(window.location.search);
 const nama = urlParams.get("nama") || "";
 const pronoun = urlParams.get("panggilan") || "Bapak/Ibu/Saudara/i";
 const namaContainer = document.querySelector(".hero h4 span");
+
+// Tambahkan spasi setelah pronoun
 namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 document.querySelector("#nama").value = nama;
+
 simplyCountdown(".simply-countdown", {
   year: 2024,
   month: 11,
