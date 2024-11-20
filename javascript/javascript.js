@@ -257,14 +257,13 @@ function copyToClipboard(text) {
 
 function checkOrientation() {
   const isLandscape = window.matchMedia("(orientation: landscape)").matches;
-  const isMobile = window.matchMedia("(max-width: 768px)").matches; // Mobile-only filter
 
-  if (isLandscape && isMobile) {
-    // Tambahkan kelas landscape untuk mobile dalam mode landscape
-    document.body.classList.add("landscape");
+  if (isLandscape) {
+    document.getElementById("landscape-warning").style.display = "flex"; // Tampilkan warning
+    document.body.style.overflow = "hidden"; // Cegah scrolling di background
   } else {
-    // Hapus kelas landscape jika tidak memenuhi kondisi
-    document.body.classList.remove("landscape");
+    document.getElementById("landscape-warning").style.display = "none"; // Sembunyikan warning
+    document.body.style.overflow = ""; // Pulihkan scrolling
   }
 }
 
@@ -273,3 +272,6 @@ window.addEventListener("load", checkOrientation);
 
 // Jalankan fungsi saat orientasi perangkat berubah
 window.addEventListener("resize", checkOrientation);
+
+// Untuk perangkat tertentu (misalnya beberapa Android), gunakan event tambahan
+window.addEventListener("orientationchange", checkOrientation);
