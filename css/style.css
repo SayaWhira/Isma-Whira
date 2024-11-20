@@ -1598,6 +1598,7 @@ body.landscape #main-content {
 
   .home .couple .isma {
     top: 1rem;
+    right: 16rem;
     animation: expand 20s ease-out forwards,
       pulseAnimation 6s ease-in-out infinite;
   }
@@ -1622,7 +1623,6 @@ body.landscape #main-content {
   .home .couple img {
     position: relative;
     width: 80%;
-    top: 2rem;
   }
 
   .custom-btn {
