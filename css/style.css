@@ -1243,6 +1243,7 @@ body.landscape #main-content {
 
   .home .couple img {
     position: relative;
+    top: 1rem;
     width: 80%;
   }
 }
@@ -1617,13 +1618,13 @@ body.landscape #main-content {
 
   .home .couple .isma {
     top: 1rem;
-    right: 16rem;
+    right: 6.5rem;
     animation: expand 20s ease-out forwards,
       pulseAnimation 6s ease-in-out infinite;
   }
 
   .home .couple .whira {
-    top: 1rem;
+    top: 4rem;
     /* right: 2rem; */
     animation: expand 20s ease-out forwards,
       pulseAnimation 6s ease-in-out infinite;
@@ -1641,7 +1642,15 @@ body.landscape #main-content {
 
   .home .couple img {
     position: relative;
-    width: 80%;
+    top: 3rem;
+    width: 100%;
+  }
+  .home .ortu2 {
+    top: 3rem;
+  }
+
+  .home .whira1 {
+    top: 3rem;
   }
 
   .custom-btn {
